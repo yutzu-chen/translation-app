@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, AlertCircle, CheckCircle, Filter, ExternalLink, X, MessageSquare } from 'lucide-react';
+import { Send, CheckCircle, Filter, ExternalLink, X, MessageSquare } from 'lucide-react';
 
 interface SlackRequest {
   id: string;
