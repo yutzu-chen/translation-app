@@ -3,8 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build-and-deploy:
@@ -25,6 +23,12 @@ jobs:
       
     - name: Build
       run: npm run build
+      
+    - name: List build output
+      run: ls -la dist/
+      
+    - name: Show index.html content
+      run: cat dist/index.html
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
